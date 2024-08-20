@@ -6329,6 +6329,86 @@ border-radius: 50px;
     margin: 0;
     padding: 0;
 }
+.gallery-index {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+.gallery-index figcaption {
+    width: 100%;
+    padding: 0 35px 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #4717e5;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -150px;
+    z-index: 2;
+    text-align: center;
+}
+
+.gallery-index:hover::before {
+    top: 50%;
+    opacity: 1;
+}
+
+
+.gallery-index:hover::after {
+    opacity: .85;
+}
+
+.masonry-gallery-huge {
+    margin: auto;
+    padding-right: 1.85%;
+    padding-left: 1.85%;
+}
+.grid-item {
+    margin: 15px;
+}
+.gallery-index:hover figcaption {
+    opacity: 1;
+    bottom: 30px;
+}
+.gallery-index figcaption h4 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+}
+.gallery-index figcaption .span {
+    color: #b68c5a;
+    font-size: 14px;
+    position: relative;
+    padding-left: 40px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.gallery-index figcaption .span::before {
+    content: "";
+    width: 30px;
+    position: absolute;
+    height: 2px;
+    background: #b68c5a;
+    top: 50%;
+    left: 0;
+}
+.gallery-index figcaption .span p {
+    margin-bottom: 0;
+}
+.gallery-index figcaption .icon {
+    position: absolute;
+    right: 0;
+    background: #3763eb;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
 .gallery-image {
 overflow: hidden;
 position: relative;
